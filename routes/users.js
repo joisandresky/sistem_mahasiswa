@@ -54,7 +54,7 @@ router.post('/register', function(req, res){
 
 passport.use(new LocalStrategy(
   function(username, password, done){
-
+    
   }));
 //Autentikasi Passport JS
 router.post('/login', passport.authenticate('local', {succesRedirect :'/', failureRedirect: '/users/login', failureFlash: true}), function(req, res) {
